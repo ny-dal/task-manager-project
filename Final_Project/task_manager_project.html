@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Task Manager Project
+      Author: Lynda Nyota
+      Date: 04/22/2026
+
+      Filename: task_manager_project.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="task_manager_project.css">
+</head>
+
+<body>
+
+    <h1>Task Manager</h1>
+
+    <!--Form to collect task details from user-->
+
+    <form id="taskForm">
+    <input type="text"id="taskName" placeholder="Enter a task"> 
+        <select id="priority">
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="important">
+      Important
+    </label>
+
+    <label>
+      <input type="checkbox" id="completed">
+      Completed
+    </label>
+
+    <button type="submit">Add Task</button>
+  </form>
+
+  <div id="taskmanager"></div>
+
+  <script src="task_manager_project.js"></script>
+</body>
+</html>
+
